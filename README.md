@@ -9,7 +9,7 @@ Start by [downloading Composer](http://getcomposer.org/download/) onto your comp
 
 Once composer is installed, to clone the base cubex project, you simply need to run
 
-    composer create-project cubex/skeleton myproject dev-master
+    composer create-project cubex/skeleton myproject
 replacing **myproject** with the name of the project folder you wish to work with.
 
 ###Getting your web environment setup
