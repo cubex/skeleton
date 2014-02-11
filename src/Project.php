@@ -35,6 +35,6 @@ class Project extends CubexKernel
    */
   public function renderHello()
   {
-    echo "Hello Wotld";
+    echo "Hello World";
   }
 }
