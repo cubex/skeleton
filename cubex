@@ -9,12 +9,6 @@ define('PHP_START', microtime(true));
 //Include the composer autoloader
 require_once __DIR__ . '/vendor/autoload.php';
 
-if(!\Packaged\Helpers\System::isWindows())
-{
-  //Clear the screen
-  echo "\033[2J\033[;H";
-}
-
 //Create an instance of cubex, with the bin root defined
 $app = new \Cubex\Cubex(__DIR__ . DIRECTORY_SEPARATOR . 'public/');
 
