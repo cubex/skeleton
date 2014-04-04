@@ -11,7 +11,9 @@
     }
   ],
   "require":           {
-    "cubex/framework": "*"
+    "cubex/framework":   "*",
+    "packaged/dispatch": "*",
+    "stack/builder":     "*"
   },
   "autoload":          {
     "psr-4": {
