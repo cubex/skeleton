@@ -26,35 +26,35 @@ Configurations for the various options can be found below.  Once you have your e
 
 ###Setting Your Virtual Host
 
-  <VirtualHost *:80>
-    SetEnv CUBEX_ENV development
+    <VirtualHost *:80>
+        SetEnv CUBEX_ENV development
 
-    DocumentRoot "project_path/public"
-    ServerName cubex.local
-    ServerAlias www.cubex.local
-    ErrorLog "logs/cubex-error.log"
-    CustomLog "logs/cubex-access.log" common
+        DocumentRoot "project_path/public"
+        ServerName cubex.local
+        ServerAlias www.cubex.local
+        ErrorLog "logs/cubex-error.log"
+        CustomLog "logs/cubex-access.log" common
 
-    RewriteEngine on
-    RewriteRule ^(.*)$        /index.php$1  [B,L,QSA]
-  </VirtualHost>
+        RewriteEngine on
+        RewriteRule ^(.*)$        /index.php  [L,QSA]
+    </VirtualHost>
 
 ###htaccess
 
-  SETENV CUBEX_ENV development
+    SETENV CUBEX_ENV development
 
-  RewriteEngine on
-  RewriteBase /
-  RewriteRule ^(.*)$        index.php  [L,QSA]
+    RewriteEngine on
+    RewriteBase /
+    RewriteRule ^(.*)$        index.php  [L,QSA]
 
 ###Raw PHP
 
 Within **public/index.php** before initiating cubex, you can put the environment directly into php with
 
-  putenv("CUBEX_ENV=development");
+    putenv("CUBEX_ENV=development");
 
 ###PHP Development Server
 
 Running the following command within the root of your project will allow you to access this project with http://localhost:8080
 
-  php -S 0.0.0.0:8080 public/index.php
+    php -S 0.0.0.0:8080 public/index.php
