@@ -6,6 +6,11 @@
 //Defining PHP_START will allow cubex to add an execution time header
 define('PHP_START', microtime(true));
 
+//These values are set for support within HHVM
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
+defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
+defined('STDERR') or define('STDERR', fopen('php://stderr', 'w'));
+
 //Include the composer autoloader
 require_once __DIR__ . '/vendor/autoload.php';
 
