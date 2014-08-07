@@ -1,6 +1,13 @@
 Cubex Skeleton Project
 ========
 
+[![Latest Stable Version](https://poser.pugx.org/cubex/skeleton/version.png)](https://packagist.org/packages/cubex/skeleton)
+[![Total Downloads](https://poser.pugx.org/cubex/skeleton/d/total.png)](https://packagist.org/packages/cubex/skeleton)
+[![Build Status](https://travis-ci.org/cubex/skeleton.png)](https://travis-ci.org/cubex/skeleton)
+[![Dependency Status](https://www.versioneye.com/php/cubex:skeleton/badge.png)](https://www.versioneye.com/php/cubex:skeleton)
+[![HHVM Status](http://hhvm.h4cc.de/badge/cubex/skeleton.png)](http://hhvm.h4cc.de/package/cubex/skeleton)
+[![Coverage Status](https://coveralls.io/repos/cubex/skeleton/badge.png)](https://coveralls.io/r/cubex/skeleton)
+
 ##Installation
 ###Getting the base project
 [Composer](http://getcomposer.org/) is a dependency management library for PHP, which you can use to download the Cubex Framework, and example project.
