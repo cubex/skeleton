@@ -1,16 +1,35 @@
 <?php
+namespace Tests;
 
-class ProjectTest extends PHPUnit_Framework_TestCase
+use Cubex\Testing\CubexTestCase;
+
+class ProjectTest extends CubexTestCase
 {
   public function testProjectIsCubexKernel()
   {
-    $cubex = new \Cubex\Cubex(__DIR__);
-    $cubex->prepareCubex();
-    $cubex->processConfiguration($cubex->getConfiguration());
-
     $this->assertInstanceOf(
       '\Cubex\Kernel\CubexKernel',
-      $cubex->make('\Cubex\Kernel\CubexKernel')
+      $this->getCubex()->make('\Cubex\Kernel\CubexKernel')
     );
+  }
+
+  public function testDefaultAction()
+  {
+    $this->getResponse('/');
+    $this->assertResponseContains('Welcome to Cubex');
+    $this->assertResponseOk();
+    $this->assertReturnsCubexResponse();
+  }
+
+  public function testHello()
+  {
+    $this->getResponse('/hello');
+    $this->assertResponseContains('Hello World');
+  }
+
+  public function testHi()
+  {
+    $this->getResponse('/hi');
+    $this->assertRedirectedTo('/hello/world');
   }
 }

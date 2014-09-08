@@ -16,7 +16,8 @@
     "stack/builder":     "*"
   },
   "require-dev": {
-    "satooshi/php-coveralls": "*"
+    "satooshi/php-coveralls": "*",
+    "phpunit/phpunit":        "4.2"
   },
   "autoload":    {
     "psr-4": {

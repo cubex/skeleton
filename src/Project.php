@@ -15,7 +15,7 @@ class Project extends CubexKernel
     return [
       'hello/world' => 'hello', //Run the renderHello method
       'google'      => 'http://www.google.com', //Redirect to url
-      'hi'          => '#@hello/world', //Redirect to hello/world
+      'hi'          => '#@/hello/world', //Redirect to hello/world
     ];
   }
 
