@@ -11,9 +11,9 @@
     }
   ],
   "require":     {
-    "cubex/framework":   "*",
-    "packaged/dispatch": "*",
-    "stack/builder":     "*"
+    "cubex/framework":   "~2.0",
+    "packaged/dispatch": "~1.0",
+    "stack/builder":     "~1.0"
   },
   "require-dev": {
     "satooshi/php-coveralls": "*",
