@@ -1,25 +1,25 @@
 {
-  "name":        "cubex/skeleton",
+  "name": "cubex/skeleton",
   "description": "Cubex Project Skeleton",
-  "homepage":    "http://cubex.io",
-  "license":     "BSD-3-Clause",
-  "authors":     [
+  "homepage": "http://cubex.io",
+  "license": "BSD-3-Clause",
+  "authors": [
     {
-      "name":     "Brooke Bryan",
-      "email":    "brooke@bajb.net",
+      "name": "Brooke Bryan",
+      "email": "brooke@bajb.net",
       "homepage": "http://www.bajb.net"
     }
   ],
-  "require":     {
-    "cubex/framework":   "~2.0",
+  "require": {
+    "cubex/framework": "~2.1",
     "packaged/dispatch": "~1.0",
-    "stack/builder":     "~1.0"
+    "stack/builder": "~1.0"
   },
   "require-dev": {
-    "satooshi/php-coveralls": "~0.0",
-    "phpunit/phpunit":        "~4.0"
+    "satooshi/php-coveralls": "~0.6",
+    "phpunit/phpunit": "~4.5"
   },
-  "autoload":    {
+  "autoload": {
     "psr-4": {
       "Skeleton\\": "src/"
     }
